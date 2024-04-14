@@ -29,7 +29,7 @@ def next_fit(process):
         if sizes[i]=='-' and (positions[i+1]-positions[i])>=process:
             last_allocated=i
             last_allocated=last_allocated % len(positions)
-            print('last_allocated :',last_allocated)
+            print('Current Allocation :',last_allocated)
             return i,positions[i]       
     return -1,-1
 
@@ -147,6 +147,7 @@ while True:
           continue
         else:
           break
+          print('\n')
 
       insert(process,i,position)
       print('position: ',positions,'sizes: ',sizes)
@@ -154,86 +155,3 @@ while True:
       print('Eliminating a process randomly')
       print('position: ',positions,'sizes: ',sizes)
       print('\n')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# i,position=worst_fit(11)
-# print(i,position)
-# insert(11,i,position)
-# print(positions,sizes)
-
-    # #perfroming compaction
-    # compact=[]
-    # new_positions=[]
-    # while i in range(len(positions)):
-    #     if sizes[i]=='-':
-    #         start=positions[i]
-    #         while sizes[i]!='-':
-    #             i=i+1
-    #         end=positions[i-1]
-    #         compact.append('-')
-    #         new_positions.append(start)
-    #         new_positions.append(end)
-    #     else:
-    #         compact.append(sizes[i])
-    #         new_positions.append(positions[i])
-
-
-
-# for i,position in enumerate(positions):
-#     print(i)
-
-
-
-
-
-# process = random.randint(1,100)
-# def insert(process,positions,sizes):
-#     print(process)
-#     for i,position in enumerate(positions):
-#         if i== len(positions)-1:
-#             break
-#         if sizes[i]=='-' and (positions[i+1]-positions[i])==process:
-#             sizes[i]=process
-#             break
-#         elif sizes[i]=='-' and (positions[i+1]-positions[i])>process:
-#             sizes[i]=process
-#             pos=position+process
-#             positions.insert(i+1,pos)
-#             space= positions[i+2]-positions[i+1]
-#             sizes.insert(i+1,space)
-#             break
-
-# insert(11,positions,sizes)
-# print(positions,sizes)
