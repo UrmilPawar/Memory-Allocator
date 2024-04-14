@@ -8,5 +8,5 @@ It allows the user to choose the required algorithm and provides the option to p
 
 ## Images
 Next Fit Algorithm
-![img1](https://github.com/UrmilPawar/Memory-Allocator/Images/img1)
-![img2](https://github.com/UrmilPawar/Memory-Allocator/Images/img2)
+![img1](https://github.com/UrmilPawar/Memory-Allocator/Images/img1.png)
+![img2](https://github.com/UrmilPawar/Memory-Allocator/Images/img2.png)
